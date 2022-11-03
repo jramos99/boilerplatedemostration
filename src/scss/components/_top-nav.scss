@@ -25,12 +25,12 @@
 		height: 1.1rem;
 		width: auto;
 		display: block;
-		@include from(l){
+		@include from(lg){
 			height: 1.4rem;
 		}
 	}
 	&__menu{
-		@include fromTo(s,l){
+		@include fromTo(s,lg){
 			position 		: fixed;
 			padding 		: 0 10px;
 			height 			: 100vh;
@@ -42,18 +42,18 @@
 			border-left 	: 1px solid #DFE0E0;
 			top 			: var(--header-height);
 			right 			: -260px;
-			&.show-top-nav {
+			&.is-active {
 				right 		: 0;
 			}
 		}
-		@include from(l){
+		@include from(lg){
 			align-self: center;
 			margin: 0;
 			padding: 0;
 		}
 	}
 	&__li{
-		@include fromTo(s,l){
+		@include fromTo(s,lg){
 			display: block;
 			border-bottom: 1px solid #DFE0E0;
 			padding: 10px 0;
@@ -65,7 +65,7 @@
 		display: inline-block;
 	}
 	&__anchor{
-		@include fromTo(s,l){
+		@include fromTo(s,lg){
 			display: block;
 		}
 
@@ -93,7 +93,7 @@
 			outline: 5px auto -webkit-focus-ring-color;
 			outline-offset: -2px;
 		}
-		@include from(l){
+		@include from(lg){
 			display: none;
 		}
 	}

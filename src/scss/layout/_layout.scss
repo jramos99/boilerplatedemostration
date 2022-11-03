@@ -1,18 +1,3 @@
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
-
-::selection {
-	color: white;
-	background: #00CBFF;
-}
-
-strong {
-	font-weight 	: 700;
-}
-
 body {
 	margin         	: var(--header-height) 0 0 0;
 	min-height     	: calc(100vh - var(--header-height));
@@ -22,7 +7,34 @@ body {
 }
 
 .main-header{}
-.main-container{}
+.main-container{
+	.container{
+		border: 1px solid black;
+		position: relative;
+		width: 100%;
+		max-width: 1280px;
+		margin: 0 auto;
+		&__slider{
+			min-height: 25vh;
+			background: red;
+			@include from(l){
+				margin-right: 250px;
+			}
+		}
+		&__signup{
+			width: 250px;
+			min-height: 25vh;
+			background: green;
+			margin: 0 auto;
+			@include from(l){
+				position: absolute;
+				right: 0;
+				top: 0;
+				
+			}
+		}
+	}
+}
 .main-footer {
 	background 		: $color-first;
 	color      		: #FFF;
