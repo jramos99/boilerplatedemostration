@@ -9,3 +9,19 @@
 }
 // Sass Color Vars
 $color-first 			: var(--color-first			);
+
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+::selection {
+	color: white;
+	background: #00CBFF;
+}
+
+strong {
+	font-weight 	: 700;
+}
