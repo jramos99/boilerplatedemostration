@@ -1,11 +1,13 @@
 //layout
 :root {
-  --header-height 		: 3rem;
+  --header-height 		: 4.938rem;
   @include from(l) {
-    --header-height 	: 4rem;
+    --header-height 	: 4.938rem;
   }
 	//native color vars
-	--color-first      	: #007BDF;
+	--main-color      	: #35df97;
+	--secondary-color	: #F8D213;
+	--background 		: #222;
 }
 // Sass Color Vars
 $color-first 			: var(--color-first			);

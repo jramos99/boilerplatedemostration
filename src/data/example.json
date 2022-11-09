@@ -1,101 +1,72 @@
-{
-	"casos":
-		[
-			{
-				"img"		: "assets/img/img1.jpg",	
-				"title"		: "Image 1",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img2.jpg",	
-				"title"		: "Image 2",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img3.jpg",	
-				"title"		: "Image 3",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img4.jpg",	
-				"title"		: "Image 4",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img1.jpg",	
-				"title"		: "Image 1",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img2.jpg",	
-				"title"		: "Image 2",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img3.jpg",	
-				"title"		: "Image 3",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img4.jpg",	
-				"title"		: "Image 4",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img1.jpg",	
-				"title"		: "Image 1",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img2.jpg",	
-				"title"		: "Image 2",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img3.jpg",	
-				"title"		: "Image 3",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img4.jpg",	
-				"title"		: "Image 4",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img1.jpg",	
-				"title"		: "Image 1",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img2.jpg",	
-				"title"		: "Image 2",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img3.jpg",	
-				"title"		: "Image 3",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img4.jpg",	
-				"title"		: "Image 4",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			}
-		]
+{	
+	
+	"menu":[
+		{
+			"name"			:"DEPORTES",
+			"link"			:"https://www.kaposbet.com/Inicio/lineas"
+		},
+		{
+			"name"			:"APUESTAS EN VIVO",
+			"link"			:"https://www.kaposbet.com/Inicio/lineas"
+		},
+		{
+			"name"			:"CASINO",
+			"link"			:"https://www.kaposbet.com/Inicio/lineas"
+		},
+		{
+			"name"			:"POKER",
+			"link"			:"https://www.kaposbet.com/Inicio/lineas"
+		},
+		{
+			"name"			:"ESPORTS",
+			"link"			:"https://www.kaposbet.com/Inicio/lineas"
+		},
+		{
+			"name"			:"PROMOCIONES",
+			"link"			:"https://www.kaposbet.com/Inicio/lineas"
+		},
+		{
+			"name"			:"BLOG",
+			"link"			:"https://www.kaposbet.com/Inicio/lineas"
+		},
+		{
+			"name"			:"BANCA",
+			"link"			:"https://www.kaposbet.com/Inicio/lineas"
+		}
+
+	],
+
+	"language":[
+		{
+			"id"			: "spanish",
+			"img"			: "assets/img/spain-flag.gif"
+		},
+		{
+			"id"			: "english",
+			"img"			: "assets/img/usa-flag.gif"
+		}
+	],
+
+	"slides":[
+		{
+			"link"			: 	"assets/img/banners-bienvenida.jpg",
+			"name"			:	"banners-bienvenida"
+		},
+		{
+			"link"			: 	"assets/img/banners-casino.jpg",
+			"name"			:	"banners-casino"
+		},
+		{
+			"link"			: 	"assets/img/banners-combinadas.jpg",
+			"name"			:	"banners-combinadas"
+		},
+		{
+			"link"			: 	"assets/img/banners-cumple.jpg",
+			"name"			:	"banners-cumple"
+		},
+		{
+			"link"			: 	"assets/img/banners.jpg",
+			"name"			:	"banners"
+		}
+	]
 }

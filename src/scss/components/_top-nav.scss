@@ -1,6 +1,6 @@
 .top-nav{
 	border-bottom 	: 1px solid #DFE0E0;
-	background    	: #FFF;
+	background    	: var(--main-color);
 	position      	: fixed;
 	top           	: 0;
 	width         	: 100%;
@@ -8,7 +8,21 @@
 	display 		: flex;
 	justify-content : center;
 	z-index: 1;
+	&__login{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		color:white;
 
+	}
+	&__language{
+		max-height: 30px;
+		background-color: rgba($color: #222, $alpha: 0);
+		option{
+			background-color: var(--main-color);
+			color: #222;
+		}
+	}
 	&__container{
 		display 		: flex;
 		justify-content : space-between;
@@ -22,11 +36,12 @@
 		align-self: center;
 	}
 	&__logo{
-		height: 1.1rem;
-		width: auto;
+		height: 86px;
+		width: 106px;
 		display: block;
-		@include from(lg){
-			height: 1.4rem;
+		img{
+			height: 86px;
+			width: 106px;
 		}
 	}
 	&__menu{
@@ -35,11 +50,11 @@
 			padding 		: 0 10px;
 			height 			: 100vh;
 			width 			: 260px;
-			background 		: white;
+			background 		: var(--main-color);
 			transition 		: right .5s;
 			overflow-y 		: auto;
-			border-top 		: 1px solid #DFE0E0;
-			border-left 	: 1px solid #DFE0E0;
+			border-top 		: 1px solid #222;
+			border-left 	: 1px solid #222;
 			top 			: var(--header-height);
 			right 			: -260px;
 			&.is-active {
@@ -55,7 +70,7 @@
 	&__li{
 		@include fromTo(s,lg){
 			display: block;
-			border-bottom: 1px solid #DFE0E0;
+			border-bottom: 1px solid #222;
 			padding: 10px 0;
 			margin: 0;
 
@@ -65,10 +80,14 @@
 		display: inline-block;
 	}
 	&__anchor{
+		
 		@include fromTo(s,lg){
 			display: block;
 		}
 
+	}
+	&__anchor:hover{
+		color: white;
 	}
 
 	&__mb-iconMenu {

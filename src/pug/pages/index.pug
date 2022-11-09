@@ -6,16 +6,15 @@ append config
 	-pageDescription	= 'This website contains a collection of projects developed by Enrique Estrada using a Gulp boilerplate developed by him'
 block main-header
 block main-container 
-	div(class='ed-container')
-		div(class='ed-item')
-			div(class='container')
-				div(class='container__slider')
+	div
+		div(class='container ed-grid s-grid-4')
+			div(class='container s-cols-4')
+				div(class='container__slider ')
 					div(class='tns-single' id='tnsSingle')
-						div: div(class='tns-single__content'): span tns Single 1
-						div: div(class='tns-single__content'): span tns Single 2
-						div: div(class='tns-single__content'): span tns Single 3
+						-for(var i = 0; i < slides.length ; i++)
+							div: div(class='tns-single__content'): img(src=`${slides[i].link}`, alt=`${slides[i].name}`)
 
-				div(class='container__signup')
+			div(class='container__signup s-cols-2')
 					h1 sugnup
 block main-footer
 block scripts

@@ -19,10 +19,32 @@ var tnsSingle = exports.tnsSingle = function tnsSingle() {
 },{}],2:[function(require,module,exports){
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+var topNav = exports.topNav = function topNav() {
+	// Aqui definimos las variables
+	var d = document,
+	    headerBtn = d.querySelector('.hamburger'),
+	    menu = d.querySelector('.top-nav__menu');
+
+	// aqui creamos la funcion que ejecuta el toogle del menu
+	headerBtn.addEventListener('click', function (e) {
+		e.preventDefault();
+		headerBtn.classList.toggle('is-active'), menu.classList.toggle('is-active');
+	});
+};
+
+},{}],3:[function(require,module,exports){
+'use strict';
+
 var _tnsSlider = require('./components/tns-slider');
 
-(0, _tnsSlider.tnsSingle)();
+var _topNav = require('./components/topNav');
 
-},{"./components/tns-slider":1}]},{},[2]);
+(0, _tnsSlider.tnsSingle)();
+(0, _topNav.topNav)();
+
+},{"./components/tns-slider":1,"./components/topNav":2}]},{},[3]);
 
 //# sourceMappingURL=scripts-min.js.map
