@@ -49,6 +49,28 @@
 
 	"slides":[
 		{
+			"link"			: 	"assets/img/banners-bono-bienvenida.png",
+			"name"			:	"banners-bienvenida"
+		},
+		{
+			"link"			: 	"assets/img/banners-casino.png",
+			"name"			:	"banners-casino"
+		},
+		{
+			"link"			: 	"assets/img/banners-combinadas-mobile.jpg",
+			"name"			:	"banners-combinadas"
+		},
+		{
+			"link"			: 	"assets/img/banners-bono-cumpleanos.png",
+			"name"			:	"banners-cumple"
+		},
+		{
+			"link"			: 	"assets/img/banners-free-bet.png",
+			"name"			:	"banners"
+		}
+	],
+	"slidesDesktop":[
+		{
 			"link"			: 	"assets/img/banners-bienvenida.jpg",
 			"name"			:	"banners-bienvenida"
 		},
@@ -67,6 +89,43 @@
 		{
 			"link"			: 	"assets/img/banners.jpg",
 			"name"			:	"banners"
+		}
+	],
+	"video":[
+		{
+			"link" 			: "assets/img/como-hacer-tus-apuestas.mp4",
+			"name"			: "como hacer tus apuestas"
+		},
+		{
+			"link" 			: "assets/img/configuraciones.mp4",
+			"name"			: "configuraciones"
+		}
+	],
+	"galeria":[
+		{
+			"video"			: "assets/img/como-hacer-tus-apuestas.mp4",
+			"img"			: "assets/img/screen-videos.png",
+			"name"			: "¿Como configurar mis apuestas?"
+		},
+		{
+			"video"			: "assets/img/",
+			"img"			: "assets/img/unselect2.png",
+			"name"			: "¿Como hacer tus apuestas deportivas?"
+		}
+	],
+
+	"dudas":[
+		{
+			"link"			: "assets/img/gift.png",
+			"name"			: "Promociones y Bonos"
+		},
+		{
+			"link"			: "assets/img/wallet.png",
+			"name"			: "Banca"
+		},
+		{
+			"link"			: "assets/img/blog.png",
+			"name"			: "Kapos Blog"
 		}
 	]
 }

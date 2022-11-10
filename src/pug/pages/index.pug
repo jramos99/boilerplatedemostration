@@ -6,15 +6,31 @@ append config
 	-pageDescription	= 'This website contains a collection of projects developed by Enrique Estrada using a Gulp boilerplate developed by him'
 block main-header
 block main-container 
-	div
-		div(class='container ed-grid s-grid-4')
-			div(class='container s-cols-4')
-				div(class='container__slider ')
-					div(class='tns-single' id='tnsSingle')
+	div(class="container")
+		div(class='ed-grid s-grid-4 rows-gap')
+			div(class='s-cols-4 l-cols-3')
+				div(class='container__slider tns-mobile')
+					div(class='tns-single ' id='tnsSingleMobile')
 						-for(var i = 0; i < slides.length ; i++)
 							div: div(class='tns-single__content'): img(src=`${slides[i].link}`, alt=`${slides[i].name}`)
-
-			div(class='container__signup s-cols-2')
-					h1 sugnup
+				div(class='container__slider tns-desktop')
+					div(class='tns-single' id='tnsSingleDesktop')
+						-for(var i = 0; i < slidesDesktop.length ; i++)
+							div: div(class='tns-single__content'): img(src=`${slidesDesktop[i].link}`, alt=`${slidesDesktop[i].name}`)
+			div(class='container__signup s-cols-4 l-cols-1 ')
+					form
+						div.form__item
+							label(for="user") Usuario
+							br
+							input(type="text" name='user') 
+						div.form__item
+							label(for="pasword") Contraseña
+							br
+							input(type="text" name='pasword') 
+						div.form__item
+							button.form__item--sign-up INGRESAR
+							button.form__item--login REGISTRATE
+						div.form__item: a(href="#") ¿Olvido su contraseña? 
+	include ../components/options.pug
 block main-footer
 block scripts

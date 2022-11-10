@@ -11,29 +11,79 @@ body {
 
 .main-header{}
 .main-container{
+	.tns-desktop{
+		display: none;
+		@include from(m){
+			display: block;
+		}
+	}
+	.tns-mobile{
+		display: block;
+		@include from(m){
+			display: none;
+		}
+
+	}
+	
 	.container{
-		border: 1px solid black;
+		//border: 1px solid black;
 		position: relative;
-		width: 100%;
+		width: calc(100% - 15px);
 		max-width: 1280px;
 		margin: 0 auto;
+		margin-top: 30px;
 		&__slider{
-			min-height: 25vh;
-			background: red;
-			@include from(l){
-				margin-right: 250px;
+			@include from(m){
+				min-height: 310px;
+			}
+			img{
+				@include from(m){
+					min-height: 310px;
+				}
 			}
 		}
 		&__signup{
-			width: 250px;
+			min-width: 250px;
+			width: 100%;
+			max-width: 350px;
 			min-height: 25vh;
-			background: green;
+			font-size: 1rem;
+			padding: 15px;
+			background: #333;
+			color: white;
 			margin: 0 auto;
-			@include from(l){
-				position: absolute;
-				right: 0;
-				top: 0;
-				
+			.form__item{
+				input{
+					width: 100%;
+					line-height: 1.5;
+				}
+				button{
+					width: 90%;
+					padding: 6px 12px;
+				}
+				&--sign-up{
+					background-color: #333;
+					color: #FFF;
+					border: 1px solid var(--main-color);
+				}
+				&--login{
+					margin-top: 15px;
+					background-color: #F8D213;
+					color: #333;
+					border: 1px solid white;
+				}
+			}
+			.form__item:nth-child(2){
+				margin-top: 20px;
+			}
+			.form__item:nth-child(3){
+				text-align: center;
+				margin-top: 10px;
+			}
+			.form__item:nth-child(4){
+				display: flex;
+				justify-content: center;
+				margin-top: 10px;
 			}
 		}
 	}

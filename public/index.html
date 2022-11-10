@@ -64,11 +64,30 @@
       </nav>
     </header>
     <main class="main-container">
-      <div>
-        <div class="container ed-grid s-grid-4">
-          <div class="container s-cols-4">
-            <div class="container__slider ">
-              <div class="tns-single" id="tnsSingle">
+      <div class="container">
+        <div class="ed-grid s-grid-4 rows-gap">
+          <div class="s-cols-4 l-cols-3">
+            <div class="container__slider tns-mobile">
+              <div class="tns-single " id="tnsSingleMobile">
+                <div>
+                  <div class="tns-single__content"><img src="assets/img/banners-bono-bienvenida.png" alt="banners-bienvenida"></div>
+                </div>
+                <div>
+                  <div class="tns-single__content"><img src="assets/img/banners-casino.png" alt="banners-casino"></div>
+                </div>
+                <div>
+                  <div class="tns-single__content"><img src="assets/img/banners-combinadas-mobile.jpg" alt="banners-combinadas"></div>
+                </div>
+                <div>
+                  <div class="tns-single__content"><img src="assets/img/banners-bono-cumpleanos.png" alt="banners-cumple"></div>
+                </div>
+                <div>
+                  <div class="tns-single__content"><img src="assets/img/banners-free-bet.png" alt="banners"></div>
+                </div>
+              </div>
+            </div>
+            <div class="container__slider tns-desktop">
+              <div class="tns-single" id="tnsSingleDesktop">
                 <div>
                   <div class="tns-single__content"><img src="assets/img/banners-bienvenida.jpg" alt="banners-bienvenida"></div>
                 </div>
@@ -87,8 +106,48 @@
               </div>
             </div>
           </div>
-          <div class="container__signup s-cols-2">
-            <h1>sugnup</h1>
+          <div class="container__signup s-cols-4 l-cols-1 ">
+            <form>
+              <div class="form__item">
+                <label for="user">Usuario</label><br>
+                <input type="text" name="user">
+              </div>
+              <div class="form__item">
+                <label for="pasword">Contraseña</label><br>
+                <input type="text" name="pasword">
+              </div>
+              <div class="form__item">
+                <button class="form__item--sign-up">INGRESAR</button>
+                <button class="form__item--login">REGISTRATE</button>
+              </div>
+              <div class="form__item"><a href="#">¿Olvido su contraseña? </a></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="ed-grid s-grid-5 section-main-container">
+        <div class="s-cols-5 m-cols-3 ed-grid s-grid-4 options-container">
+          <div class="video-container s-cols-4 m-cols-3 m-rows-2">
+            <div class="video-container-box">
+              <video src="assets/img/como-hacer-tus-apuestas.mp4" controls></video>
+            </div>
+          </div>
+          <div class="s-cols-2 m-cols-1"><img src="assets/img/screen-videos.png" alt="¿Como configurar mis apuestas?" value="assets/img/como-hacer-tus-apuestas.mp4">
+            <p>¿Como configurar mis apuestas?</p>
+          </div>
+          <div class="s-cols-2 m-cols-1"><img src="assets/img/unselect2.png" alt="¿Como hacer tus apuestas deportivas?" value="assets/img/">
+            <p>¿Como hacer tus apuestas deportivas?</p>
+          </div>
+        </div>
+        <div class="s-cols-5 m-cols-2">
+          <div class="options"><img src="assets/img/gift.png" alt="assets/img/gift.png">
+            <p>Promociones y Bonos</p>
+          </div>
+          <div class="options"><img src="assets/img/wallet.png" alt="assets/img/wallet.png">
+            <p>Banca</p>
+          </div>
+          <div class="options"><img src="assets/img/blog.png" alt="assets/img/blog.png">
+            <p>Kapos Blog</p>
           </div>
         </div>
       </div>
