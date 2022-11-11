@@ -1,0 +1,15 @@
+.prefooter-container{
+	margin-top: 70px;
+}
+
+.image-display-mobile{
+	@include from(m){
+		display: none;
+	}
+}
+.image-display-desktop{
+	display: none;
+	@include from(m){
+		display: block;
+	}
+}

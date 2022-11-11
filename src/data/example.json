@@ -103,12 +103,12 @@
 	],
 	"galeria":[
 		{
-			"video"			: "assets/img/como-hacer-tus-apuestas.mp4",
+			"video"			: "assets/img/configuraciones.mp4",
 			"img"			: "assets/img/screen-videos.png",
 			"name"			: "¿Como configurar mis apuestas?"
 		},
 		{
-			"video"			: "assets/img/",
+			"video"			: "assets/img/como-hacer-tus-apuestas.mp4",
 			"img"			: "assets/img/unselect2.png",
 			"name"			: "¿Como hacer tus apuestas deportivas?"
 		}
@@ -127,5 +127,63 @@
 			"link"			: "assets/img/blog.png",
 			"name"			: "Kapos Blog"
 		}
+	],
+	"deportes": [
+		{
+			"img"			:"assets/img/bola.png",
+			"name"			:"DEPORTES"
+
+		},
+		{
+			"img"			:"assets/img/bola.png",
+			"name"			:"DEPORTES EN VIVO"
+		},
+		{
+			"img"			:"assets/img/dados.png",
+			"name"			:"CASINO"
+		},
+		{
+			"img"			:"assets/img/dados.png",
+			"name"			:"CASINO EN VIVO"
+		},
+		{
+			"img"			:"assets/img/esports.png",
+			"name"			:"ESPORTS"
+		}
+	],
+	"footer": [
+		{
+			"name"			: "Acerca de nosotros",
+			"link"			: "#"
+		},
+		{
+			"name"			: "Términos y condiciones",
+			"link"			: "#"
+		},
+		{
+			"name"			: "Juego responsable",
+			"link"			: "#"
+		},
+		{
+			"name"			: "Politica de privacidad",
+			"link"			: "#"
+		},
+		{
+			"name"			: "Programa de lealtad",
+			"link"			: "#"
+		},
+		{
+			"name"			: "Reglas de la casa",
+			"link"			: "#"
+		},
+		{
+			"name"			: "Reglas de deportes",
+			"link"			: "#"
+		},
+		{
+			"name"			: "Reglas de casino",
+			"link"			: "#"
+		}
+		
 	]
 }

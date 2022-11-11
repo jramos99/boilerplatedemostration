@@ -1,17 +1,8 @@
-div(class='ed-container')
-	div(class='ed-item')
-		h2 Contact
-div(class='ed-grid m-grid-2 lg-grid-4 row-gap')
-	ul.data-list
-		li: i(class='far fa-envelope'): a(href='https://www.google.com/' target='_blank' class='foot-icon') Link 1
-		li: i(class='far fa-envelope'): a(href='https://www.google.com/' target='_blank' class='foot-icon') Link 2
-	ul.data-list
-		li: i(class='far fa-envelope'): a(href='https://www.google.com/' target='_blank' class='foot-icon') Link 3
-		li: i(class='far fa-envelope'): a(href='https://www.google.com/' target='_blank' class='foot-icon') Link 4
-	ul.data-list
-		li: i(class='far fa-envelope'): a(href='https://www.google.com/' target='_blank' class='foot-icon') Link 5
-		li: i(class='far fa-envelope'): a(href='https://www.google.com/' target='_blank' class='foot-icon') Link 6
-	ul.data-list
-		li: i(class='far fa-envelope'): a(href='https://www.google.com/' target='_blank' class='foot-icon') Link 7
-		li: i(class='far fa-envelope'): a(href='https://www.google.com/' target='_blank' class='foot-icon') Link 8
-		
+div(class='footer-container ')
+	ul(class="ed-grid m-grid-3 rows-gap")
+		- for(i=0 ; i < footer.length; i++)
+			li: a(href=`${footer[i].link}`)= footer[i].name 
+	div(class="author")
+		div(class="jazz-div")
+			span powered by JazzGS 
+			img(src="assets/img/powered-jgs.png", alt="Jazz")

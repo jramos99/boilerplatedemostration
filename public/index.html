@@ -57,7 +57,11 @@
             <li class="top-nav__li"><a class="top-nav__anchor" href="https://www.kaposbet.com/Inicio/lineas">PROMOCIONES</a></li>
             <li class="top-nav__li"><a class="top-nav__anchor" href="https://www.kaposbet.com/Inicio/lineas">BLOG</a></li>
             <li class="top-nav__li"><a class="top-nav__anchor" href="https://www.kaposbet.com/Inicio/lineas">BANCA</a></li>
-            <button class="top-nav__language"><img src="assets/img/lang-flag.png" alt=""></button>
+            <button class="top-nav__language"><img src="assets/img/lang-flag.png" alt="language"></button>
+            <div class="show" id="language">
+              <div class="modal-language">spanish<img src="assets/img/spain-flag.gif" alt="spanish"></div>
+              <div class="modal-language">english<img src="assets/img/usa-flag.gif" alt="english"></div>
+            </div>
           </ul>
           <button class="top-nav__mb-iconMenu hamburger hamburger--slider-r" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
         </div>
@@ -125,56 +129,69 @@
           </div>
         </div>
       </div>
-      <div class="ed-grid s-grid-5 section-main-container">
-        <div class="s-cols-5 m-cols-3 ed-grid s-grid-4 options-container">
+      <div class="ed-grid s-grid-6 section-main-container">
+        <div class="s-cols-6 m-cols-4 ed-grid s-grid-4 options-container">
           <div class="video-container s-cols-4 m-cols-3 m-rows-2">
             <div class="video-container-box">
-              <video src="assets/img/como-hacer-tus-apuestas.mp4" controls></video>
+              <video id="video-galery" src="assets/img/como-hacer-tus-apuestas.mp4" controls></video>
             </div>
           </div>
-          <div class="s-cols-2 m-cols-1"><img src="assets/img/screen-videos.png" alt="¿Como configurar mis apuestas?" value="assets/img/como-hacer-tus-apuestas.mp4">
-            <p>¿Como configurar mis apuestas?</p>
+          <div class="gallery-image s-cols-2 m-cols-1">
+            <div><img src="assets/img/screen-videos.png" alt="¿Como configurar mis apuestas?" value="assets/img/configuraciones.mp4">
+              <p>¿Como configurar mis apuestas?</p>
+            </div>
           </div>
-          <div class="s-cols-2 m-cols-1"><img src="assets/img/unselect2.png" alt="¿Como hacer tus apuestas deportivas?" value="assets/img/">
-            <p>¿Como hacer tus apuestas deportivas?</p>
+          <div class="gallery-image s-cols-2 m-cols-1">
+            <div><img src="assets/img/unselect2.png" alt="¿Como hacer tus apuestas deportivas?" value="assets/img/como-hacer-tus-apuestas.mp4">
+              <p>¿Como hacer tus apuestas deportivas?</p>
+            </div>
           </div>
         </div>
-        <div class="s-cols-5 m-cols-2">
-          <div class="options"><img src="assets/img/gift.png" alt="assets/img/gift.png">
-            <p>Promociones y Bonos</p>
-          </div>
-          <div class="options"><img src="assets/img/wallet.png" alt="assets/img/wallet.png">
-            <p>Banca</p>
-          </div>
-          <div class="options"><img src="assets/img/blog.png" alt="assets/img/blog.png">
-            <p>Kapos Blog</p>
-          </div>
+        <div class="s-cols-6 m-cols-2"><a class="options"><img src="assets/img/gift.png" alt="assets/img/gift.png">
+            <p>Promociones y Bonos</p></a><a class="options"><img src="assets/img/wallet.png" alt="assets/img/wallet.png">
+            <p>Banca</p></a><a class="options"><img src="assets/img/blog.png" alt="assets/img/blog.png">
+            <p>Kapos Blog</p></a>
         </div>
       </div>
+      <div class="cards-container ed-grid s-grid-1 m-grid-5"><a class="card-container">
+          <div class="card-container_image"><img src="assets/img/bola.png" alt="DEPORTES"></div>
+          <div class="card-container_text">
+            <p>DEPORTES</p>
+          </div></a><a class="card-container">
+          <div class="card-container_image"><img src="assets/img/bola.png" alt="DEPORTES EN VIVO"></div>
+          <div class="card-container_text">
+            <p>DEPORTES EN VIVO</p>
+          </div></a><a class="card-container">
+          <div class="card-container_image"><img src="assets/img/dados.png" alt="CASINO"></div>
+          <div class="card-container_text">
+            <p>CASINO</p>
+          </div></a><a class="card-container">
+          <div class="card-container_image"><img src="assets/img/dados.png" alt="CASINO EN VIVO"></div>
+          <div class="card-container_text">
+            <p>CASINO EN VIVO</p>
+          </div></a><a class="card-container">
+          <div class="card-container_image"><img src="assets/img/esports.png" alt="ESPORTS"></div>
+          <div class="card-container_text">
+            <p>ESPORTS</p>
+          </div></a>
+      </div>
+      <div class="prefooter-container ed-grid s-grid-1"><img class="image-display-mobile" src="assets/img/banking.png" alt="banking"><img class="image-display-desktop" src="assets/img/banking-desktop.jpg" alt="banking"></div>
     </main>
     <footer class="main-footer">
-      <div class="ed-container">
-        <div class="ed-item">
-          <h2>Contact</h2>
+      <div class="footer-container ">
+        <ul class="ed-grid m-grid-3 rows-gap">
+          <li><a href="#">Acerca de nosotros</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Juego responsable</a></li>
+          <li><a href="#">Politica de privacidad</a></li>
+          <li><a href="#">Programa de lealtad</a></li>
+          <li><a href="#">Reglas de la casa</a></li>
+          <li><a href="#">Reglas de deportes</a></li>
+          <li><a href="#">Reglas de casino</a></li>
+        </ul>
+        <div class="author">
+          <div class="jazz-div"><span>powered by JazzGS </span><img src="assets/img/powered-jgs.png" alt="Jazz"></div>
         </div>
-      </div>
-      <div class="ed-grid m-grid-2 lg-grid-4 row-gap">
-        <ul class="data-list">
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 1</a></i></li>
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 2</a></i></li>
-        </ul>
-        <ul class="data-list">
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 3</a></i></li>
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 4</a></i></li>
-        </ul>
-        <ul class="data-list">
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 5</a></i></li>
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 6</a></i></li>
-        </ul>
-        <ul class="data-list">
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 7</a></i></li>
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 8</a></i></li>
-        </ul>
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
