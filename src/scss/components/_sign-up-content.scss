@@ -1,0 +1,138 @@
+.sign-up-content{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	color: white;
+	input{
+		width: 90vw;
+		@include from(m){
+			width: 50vw;
+		}
+		
+	}
+	.form-sign-up-container{
+		justify-content: center;
+	}
+	h2{
+		font-size: 1.5rem;
+	}
+	.form-item-register{
+		padding: 7px 10px;
+  		height: 42px;
+		border-radius: 12px;
+	}
+	.phone-container{
+		display: flex;
+		height: 66px;
+		padding-top: calc(66px - 42px);
+		div{
+			
+			@include from(m){
+				width: 6vw;
+			}
+		}
+		input{
+			width: 78vw;
+			@include from(m){
+				width: 43vw;
+			}
+		}
+	}
+	.image-container{
+		display: flex;
+		align-items: center;
+		margin-right: 20px;
+		img{
+			width: 16px;
+			height: 11px;
+		}
+	}
+	.date-container{
+		margin-top: 15px;
+		
+		input{
+			width: 90vw;
+			@include from(m){
+				width: 50vw;
+			}
+		}
+	}
+	.terms{
+		display: flex;
+
+		margin-top: 20px;
+		input{
+			width: 6vw;
+			margin-right: 1vw;
+			max-height: 20px;
+		}
+		label{
+			width: calc(90vw - 7vw);
+			@include from (m){
+				width: calc(50vw - 7vw);
+			}
+		}
+		
+		
+	}
+}
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.content-select select::-ms-expand {
+    display: none;
+}
+
+.content-select{
+	padding-top: calc(66px - 42px);
+	max-width: 90vw;
+	@include from(m){
+		max-width: 50vw;
+	}
+	position: relative;
+}
+ 
+.content-select select{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	font-family: 
+	'Quicksand', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+ 
+.content-select select:hover{
+	background: #B1E8CD;
+}
+ 
+.content-select i{
+	position: absolute;
+	right: 20px;
+	top: calc(50% - 0px);
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-left:4px solid #2AC176;
+	border-bottom:4px solid #2AC176;
+	transform: rotate(-45deg); 
+	transition: all 0.25s ease;
+}
+ 
+.content-select:hover i{
+	margin-top: 3px;
+}

@@ -1,12 +1,12 @@
 extends ../config/template
 append config
-	-currentPage = "portfolio"
-	-siteName = 'kikeestrada'
+	-currentPage = "bonos"
+	-siteName = 'kaposbet'
 	-content = 'content'
 	-pageDescription = 'This website contains a collection of projects developed by Enrique Estrada using a Gulp boilerplate developed by him'
 block main-header
 block main-container
-	//- include ../components/json-data
+	include ../components/bonos-content.pug
+	include ../components/prefooter
 block main-footer
 block scripts
-

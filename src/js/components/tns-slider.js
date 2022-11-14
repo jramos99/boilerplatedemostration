@@ -28,7 +28,23 @@ const tnsSingleDesktop = ()=> {
 		}); 
 };
 
+const tnsSinglePrefooter = ()=> {
+	const slider = tns({ 
+		container           : '#tnsSinglePrefooter',
+		items               : 2, 
+		slideBy             : 1,
+		speed               : 1000,
+		mode                : 'gallery',
+		mouseDrag           : true,
+		controlsText: [ 
+			'<i class="fas fa-chevron-left"></i>',
+			'<i class="fas fa-chevron-right"></i>'
+			]
+		}); 
+};
+
 export{
 	tnsSingleMobile,
-	tnsSingleDesktop
+	tnsSingleDesktop,
+	tnsSinglePrefooter
 }

@@ -10,6 +10,6 @@ div(class="ed-grid s-grid-6 section-main-container")
 					p= galeria[i].name
 	div(class="s-cols-6 m-cols-2")
 		- for(i = 0; i < dudas.length; i++)
-			a.options
+			a.options(href=`${dudas[i].a}` )
 				img(src= dudas[i].link, alt=`${dudas[i].link}`)
 				p= dudas[i].name

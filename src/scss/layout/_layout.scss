@@ -34,16 +34,16 @@ body {
 		margin-top: 30px;
 		&__slider{
 			@include from(m){
-				min-height: 310px;
+				min-height: 37vh;
 			}
 			img{
 				@include from(m){
-					min-height: 310px;
+					min-height: 37vh;
 				}
 			}
 		}
 		&__signup{
-			min-width: 250px;
+			min-width: 200px;
 			width: 100%;
 			max-width: 350px;
 			min-height: 25vh;

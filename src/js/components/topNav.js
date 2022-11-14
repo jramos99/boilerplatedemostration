@@ -24,6 +24,7 @@ export const modalLanguage = () => {
 	// aqui creamos la funcion que ejecuta el toogle del menu
 	button.addEventListener('click', e =>{
 		e.preventDefault();
+		console.log(button)
 		modal.classList.toggle('show')
 	});
 

@@ -75,6 +75,10 @@
 			"name"			:	"banners-bienvenida"
 		},
 		{
+			"link"			: 	"assets/img/banners-casino2.png",
+			"name"			:	"banners-casino"
+		},
+		{
 			"link"			: 	"assets/img/banners-casino.jpg",
 			"name"			:	"banners-casino"
 		},
@@ -117,7 +121,8 @@
 	"dudas":[
 		{
 			"link"			: "assets/img/gift.png",
-			"name"			: "Promociones y Bonos"
+			"name"			: "Promociones y Bonos",
+			"a"				: "bonos.html"
 		},
 		{
 			"link"			: "assets/img/wallet.png",
@@ -185,5 +190,109 @@
 			"link"			: "#"
 		}
 		
-	]
+	],
+	 "monedas":[
+		{
+			"moneda"		: "PEN"
+		},
+		{
+			"moneda"		:"USD"
+		},
+		{
+			"moneda"		:"CRC"
+		}
+	 ],
+	 "numeros":[
+		{
+			"pais"			:"assets/img/cr.png",
+			"codigo"		:"+506"
+		}
+	 ],
+	 "paises":[
+		{
+			"pais"			:"Costa Rica"
+		},
+		{
+			"pais"			:"Nicaragua"
+		},
+		{
+			"pais"			:"Panama"
+		}
+	 ],
+	 "estados":[
+		{
+			"estado"			:"San José"
+		},
+		{
+			"estado"			:"Heredia"
+		},
+		{
+			"estado"			:"Alajuela"
+		}
+	 ],
+	 "prefooter":[
+			{
+				"img"			:"assets/img/bambif.png"
+			},
+			{
+				"img"			:"assets/img/bbva.png"
+			},
+			{
+				"img"			:"assets/img/bcp.png"
+			},
+			{
+				"img"			:"assets/img/caja.png"
+			},
+			{
+				"img"			:"assets/img/cripto.png"
+			},
+			{
+				"img"			:"assets/img/fullcarga.png"
+			},
+			{
+				"img"			:"assets/img/houses.png"
+			},
+			{
+				"img"			:"assets/img/interbank.png"
+			},
+			{
+				"img"			:"assets/img/kasnet.png"
+			},
+			{
+				"img"			:"assets/img/lukita.png"
+			},
+			{
+				"img"			:"assets/img/moneygram.png"
+			},
+			{
+				"img"			:"assets/img/pago-efectivo.jpg"
+			},
+			{
+				"img"			:"assets/img/pago-seguro.png"
+			},
+			{
+				"img"			:"assets/img/plin.png"
+			},
+			{
+				"img"			:"assets/img/ria.png"
+			},
+			{
+				"img"			:"assets/img/scotiabank.png"
+			},
+			{
+				"img"			:"assets/img/tambo.png"
+			},
+			{
+				"img"			:"assets/img/tunki.png"
+			},
+			{
+				"img"			:"assets/img/visa-mastercard.png"
+			},
+			{
+				"img"			:"assets/img/westerunion.png"
+			},
+			{
+				"img"			:"assets/img/yape.png"
+			}
+	 ]	
 }

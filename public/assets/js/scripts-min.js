@@ -1,4 +1,28 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var accordion = function accordion() {
+    var d = document,
+        acc = document.getElementsByClassName("accordion-container__btn-acc");
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+};
+
+exports.accordion = accordion;
+
+},{}],2:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22,7 +46,7 @@ var galery = exports.galery = function galery() {
 	}
 };
 
-},{}],2:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -52,10 +76,23 @@ var tnsSingleDesktop = function tnsSingleDesktop() {
 	});
 };
 
+var tnsSinglePrefooter = function tnsSinglePrefooter() {
+	var slider = tns({
+		container: '#tnsSinglePrefooter',
+		items: 2,
+		slideBy: 1,
+		speed: 1000,
+		mode: 'gallery',
+		mouseDrag: true,
+		controlsText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
+	});
+};
+
 exports.tnsSingleMobile = tnsSingleMobile;
 exports.tnsSingleDesktop = tnsSingleDesktop;
+exports.tnsSinglePrefooter = tnsSinglePrefooter;
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -83,6 +120,7 @@ var modalLanguage = exports.modalLanguage = function modalLanguage() {
 	// aqui creamos la funcion que ejecuta el toogle del menu
 	button.addEventListener('click', function (e) {
 		e.preventDefault();
+		console.log(button);
 		modal.classList.toggle('show');
 	});
 
@@ -94,7 +132,7 @@ var modalLanguage = exports.modalLanguage = function modalLanguage() {
 	}
 };
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 'use strict';
 
 var _tnsSlider = require('./components/tns-slider');
@@ -103,12 +141,30 @@ var _topNav = require('./components/topNav');
 
 var _galery = require('./components/galery');
 
-(0, _tnsSlider.tnsSingleDesktop)();
-(0, _tnsSlider.tnsSingleMobile)();
-(0, _topNav.topNav)();
-(0, _topNav.modalLanguage)();
-(0, _galery.galery)();
+var _acordeon = require('./components/acordeon');
 
-},{"./components/galery":1,"./components/tns-slider":2,"./components/topNav":3}]},{},[4]);
+(function () {
+	(0, _topNav.topNav)();
+	(0, _topNav.modalLanguage)();
+	if (document.body.classList.contains('home')) {
+		// functions here
+		(0, _tnsSlider.tnsSingleDesktop)();
+		(0, _tnsSlider.tnsSingleMobile)();
+		(0, _tnsSlider.tnsSinglePrefooter)();
+		(0, _galery.galery)();
+	} else if (document.body.classList.contains('bonos')) {
+		// functions here
+		(0, _acordeon.accordion)();
+		(0, _tnsSlider.tnsSinglePrefooter)();
+	} else if (document.body.classList.contains('page3')) {
+		// functions here
+		tabs();
+		(0, _acordeon.accordion)();
+	} else if (document.body.classList.contains('page4')) {
+		// functions here
+	}
+})();
+
+},{"./components/acordeon":1,"./components/galery":2,"./components/tns-slider":3,"./components/topNav":4}]},{},[5]);
 
 //# sourceMappingURL=scripts-min.js.map

@@ -1,0 +1,72 @@
+div(class='ed-grid s-grid-2 container sign-up-content')
+	div 
+		div(class="s-cols-2")
+			h2 Registrate
+		form(class='form-sign-up-container')
+			div(class="content-select")
+				select
+					- for(i = 0; i < monedas.length; i++)
+						option(value=`${monedas[i].moneda}`)= monedas[i].moneda
+				i 
+			div(class="m-cols-1")
+				label(for="name")
+				br
+				input(class="form-item-register" type="text" name="name" placeholder="name")
+			div(class="m-cols-1")
+				label(for="apellido")
+				br
+				input(class="form-item-register" type="text" name="apellido" placeholder="primer Apellido")
+			div(class="m-cols-1")
+				label(for="email")
+				br
+				input(class="form-item-register" type="text" name="email" placeholder="Correo electrónico")
+			div(class="m-cols-1")
+				label(for="email-confirm")
+				br
+				input(class="form-item-register" type="text" name="email-confirm" placeholder="Confirmar correo")
+			div(class="phone-container")
+				div(class="image-container")
+					img(src=numeros[0].pais)
+					span= numeros[0].codigo
+				label(for="name")
+				br
+				input(class="form-item-register" type="text" name="name" placeholder="Número telefonico")
+			div(class="m-cols-1")
+				label(for="cedula")
+				br
+				input(class="form-item-register" type="text" name="cedula" placeholder="Cédula o identidicación del gobierno")
+			div(class="content-select")
+				select
+					- for(i = 0; i < paises.length; i++)
+						option(value=`${paises[i].pais}`)= paises[i].pais
+				i
+			div(class="content-select")
+				select
+					- for(i = 0; i < estados.length; i++)
+						option(value=`${estados[i].estado}`)= estados[i].estado
+				i
+			div(class="m-cols-1")
+				label(for="direccion")
+				br
+				input(class="form-item-register" type="text" name="direccion" placeholder="Dirección")
+			div(class="m-cols-1")
+				label(for="pasword")
+				br
+				input(class="form-item-register" type="text" name="password" placeholder="Contraseña")
+			div(class="m-cols-1")
+				label(for="confirm")
+				br
+				input(class="form-item-register" type="text" name="confirm" placeholder="Confirmar contraseña")
+			div(class="date-container")
+				label(for="date") Fecha de nacimiento
+				br
+				input(class="form-item-register" type="date" name="date" placeholder="Fecha de nacimiento")
+			div(class="m-cols-1")
+				label(for="pomotion")
+				br
+				input(class="form-item-register" type="text" name="promotion" placeholder="Código promocional")
+			div(class="terms")
+				input(class="form-item-register" type="checkbox" name="terms")
+				br
+				label(for="terms") He leído las reglas de la casa y estoy de acuerdo con las mismas
+			
