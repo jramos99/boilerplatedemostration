@@ -2,7 +2,8 @@ div(class='ed-container')
 	div(class='ed-item')
 		div(class='accordion-container')
 			- for(let i = 0; i < slidesDesktop.length; i++)
+				h2= slidesDesktop[i].title
 				button(class='accordion-container__btn-acc')
 					img(src=`${slidesDesktop[i].link}`, alt=`${slidesDesktop[i].name}`)
 				div(class='accordion-container__panel')
-					p Lorem ipsum dolor sit amet
+					

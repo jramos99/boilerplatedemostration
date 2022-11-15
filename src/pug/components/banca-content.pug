@@ -1,0 +1,20 @@
+div(class='ed-container')
+	div(class='ed-item')
+		div(class='tabs-container')
+			ul(class='tabs-container__tabs' id='tabs')
+				li(class='tabs-container__tab is-active') Depositos
+				li(class='tabs-container__tab') Retiros
+			div(class='tabs-container__panels')
+				div(class='tabs-container__panel is-active')
+					h2 Opcion 1
+					p Lorem ipsum dolor sit amet, consectetur
+				div(class='tabs-container__panel')
+					div(class='ed-container')
+						div(class='ed-item')
+							div(class='accordion-container')
+								- for(let i = 0; i < slidesDesktop.length; i++)
+									h2= slidesDesktop[i].title
+										button(class='accordion-container__btn-acc')
+										img(src=`${slidesDesktop[i].link}`, alt=`${slidesDesktop[i].name}`)
+										div(class='accordion-container__panel')
+					p  Si solicitas un retiro sin haber apostado una cantidad igual o superior a la cantidad depositada, podemos solicitarte que realices una apuesta por la totalidad o parte de los depósitos anteriores efectuados y/o cobrar una tasa por el retiro solicitado. Así mismo, si el depósito por medio de tarjeta de crédito no ha sido jugado en su totalidad, las solicitudes de retiro tendrán que esperar 2 meses para ser procesados si los mismos NO son jugados.

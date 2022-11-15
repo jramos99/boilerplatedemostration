@@ -2,6 +2,8 @@ import {tnsSingleMobile, tnsSingleDesktop, tnsSinglePrefooter} from './component
 import {topNav, modalLanguage} from './components/topNav';
 import {galery} from './components/galery';
 import {accordion} from './components/acordeon';
+import {mdInner} from './components/md-compiler';
+import {tabs} from './components/tabs';
 
 (()=>{
 	topNav();
@@ -14,10 +16,12 @@ import {accordion} from './components/acordeon';
 		galery();
 	}else if (document.body.classList.contains('bonos')) {
 		// functions here
+		mdInner('./md', 'slidesDesktop','accordion-container__panel');
 		accordion();
 		tnsSinglePrefooter();
-	}else if (document.body.classList.contains('page3')) {
+	}else if (document.body.classList.contains('banca')) {
 		// functions here
+		tnsSinglePrefooter();
 		tabs();
 		accordion();
 	}else if (document.body.classList.contains('page4')) {

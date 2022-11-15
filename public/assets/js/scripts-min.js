@@ -47,6 +47,76 @@ var galery = exports.galery = function galery() {
 };
 
 },{}],3:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+function mdInnerJson(data, rutaMd, nameObjJson, classDiv) {
+	var _loop = function _loop(i) {
+
+		var d = document,
+		    $main = d.querySelectorAll("div." + classDiv)[i];
+
+		fetch("assets/" + rutaMd + "/" + data[nameObjJson][i].md + ".md").then(function (res) {
+			return res.ok ? res.text() : Promise.reject(res);
+		}).then(function (text) {
+			var div = document.createElement("div");
+			div.innerHTML = new showdown.Converter().makeHtml(text);
+			$main.appendChild(div);
+		}).catch(function (err) {
+			console.log(err);
+			var message = err.statusText || "Ocurrio un error";
+			$main.innerHTML = "Error " + err.status + ":" + message;
+		});
+	};
+
+	for (var i = 0; i < data[nameObjJson].length; i++) {
+		_loop(i);
+	}
+}
+
+var mdInner = exports.mdInner = function mdInner(rutaMd, nameObjJson, classDiv) {
+	function md() {
+		fetch("./example.json").then(function (response) {
+			return response.json();
+		}).then(function (data) {
+			return mdInnerJson(data, rutaMd, nameObjJson, classDiv);
+		});
+	}
+
+	var funcion = md();
+};
+
+},{}],4:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var tabs = function tabs() {
+    var d = document,
+        tabs = Array.prototype.slice.apply(d.querySelectorAll('.tabs-container__tab')),
+        panels = Array.prototype.slice.apply(d.querySelectorAll('.tabs-container__panel'));
+
+    d.getElementById('tabs').addEventListener('click', function (e) {
+        if (e.target.classList.contains('tabs-container__tab')) {
+            var i = tabs.indexOf(e.target);
+            tabs.map(function (tab) {
+                return tab.classList.remove('is-active');
+            });
+            tabs[i].classList.add('is-active');
+            panels.map(function (tab) {
+                return tab.classList.remove('is-active');
+            });
+            panels[i].classList.add('is-active');
+        }
+    });
+};
+
+exports.tabs = tabs;
+
+},{}],5:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -92,7 +162,7 @@ exports.tnsSingleMobile = tnsSingleMobile;
 exports.tnsSingleDesktop = tnsSingleDesktop;
 exports.tnsSinglePrefooter = tnsSinglePrefooter;
 
-},{}],4:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -132,7 +202,7 @@ var modalLanguage = exports.modalLanguage = function modalLanguage() {
 	}
 };
 
-},{}],5:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 'use strict';
 
 var _tnsSlider = require('./components/tns-slider');
@@ -142,6 +212,10 @@ var _topNav = require('./components/topNav');
 var _galery = require('./components/galery');
 
 var _acordeon = require('./components/acordeon');
+
+var _mdCompiler = require('./components/md-compiler');
+
+var _tabs = require('./components/tabs');
 
 (function () {
 	(0, _topNav.topNav)();
@@ -154,17 +228,19 @@ var _acordeon = require('./components/acordeon');
 		(0, _galery.galery)();
 	} else if (document.body.classList.contains('bonos')) {
 		// functions here
+		(0, _mdCompiler.mdInner)('./md', 'slidesDesktop', 'accordion-container__panel');
 		(0, _acordeon.accordion)();
 		(0, _tnsSlider.tnsSinglePrefooter)();
-	} else if (document.body.classList.contains('page3')) {
+	} else if (document.body.classList.contains('banca')) {
 		// functions here
-		tabs();
+		(0, _tnsSlider.tnsSinglePrefooter)();
+		(0, _tabs.tabs)();
 		(0, _acordeon.accordion)();
 	} else if (document.body.classList.contains('page4')) {
 		// functions here
 	}
 })();
 
-},{"./components/acordeon":1,"./components/galery":2,"./components/tns-slider":3,"./components/topNav":4}]},{},[5]);
+},{"./components/acordeon":1,"./components/galery":2,"./components/md-compiler":3,"./components/tabs":4,"./components/tns-slider":5,"./components/topNav":6}]},{},[7]);
 
 //# sourceMappingURL=scripts-min.js.map

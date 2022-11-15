@@ -6,8 +6,10 @@ html(lang='en' prefix='og: http://ogp.me/ns#', class='no-js')
 		include utilis/metatags
 		include utilis/metaTagsPWA
 		script(src="https://kit.fontawesome.com/20f3c29ee8.js" crossorigin="anonymous")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js") 
 		link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css')
 		link(rel="stylesheet" href="assets/css/styles.css")
+
 		title= currentPage.slice(0,1).toUpperCase() + currentPage.slice(1) + " | " + siteName
 	body(class=currentPage, itemscope itemtype="http://schema.org/WebPage")
 		//-here start the Main Header
