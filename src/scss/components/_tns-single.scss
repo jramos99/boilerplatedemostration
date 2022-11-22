@@ -8,16 +8,21 @@
 		span{color        : white;}
 		width: 100%;
 		img{
+			object-fit: scale-down;
 			width: 100%;
-			min-height: 264px;
+			height: auto;
+			min-height: 214px;
 			max-height: 540px;
 		}
 	}
 }
 .prefooter-container .tns-single{
+	max-height: 150px;
+	button.tns-item{
+		display: none;
+	}
 	&__content{
 		min-height: 200px;
-		
 		display           : flex;
 		justify-content   : center;
 		flex-direction    : column;
@@ -27,12 +32,17 @@
 		img{
 			@include from(s){
 				width: 50%;
+				height: auto;
 			}
 			@include from(m){
 				width:30%;
+				height: auto;
 			}
 			min-height: 50px;
 			max-height: 100px;
 		}
 	}
+}
+#customize-toggle1, #customize-toggle2 {
+	display: none;
 }

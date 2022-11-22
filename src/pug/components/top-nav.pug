@@ -1,15 +1,15 @@
 nav(class='top-nav')
 	div(class='top-nav__container')
 		a(href='./', class='top-nav__link')
-			img(src='assets/img/sb-logo.png', alt='logo', class='top-nav__logo')
+			img(src='assets/img/sb-logo.webp', alt='logo', class='top-nav__logo')
 		ul(class='top-nav__menu')
 			-for(var i = 0; i < menu.length ; i++)
 				li(class='top-nav__li'): a(href=`${menu[i].link}`, class='top-nav__anchor')=menu[i].name
-			button(class='top-nav__language'): img(src='assets/img/lang-flag.png', alt="language" )
+			button(class='top-nav__language'): img(src='assets/img/lang-flag.webp', alt="language" )
 			div#language.show
 				-for(i = 0; i < language.length; i++)
 					div(class='modal-language')= language[i].id 
 						img(src=`${language[i].img}`, alt=`${language[i].id}` )
-		button(type='button', class='top-nav__mb-iconMenu hamburger hamburger--slider-r')
-			span.hamburger-box
-				span.hamburger-inner
+		button( aria-label="hamburguer-menu" type='button', class='top-nav__mb-iconMenu hamburger hamburger--slider-r')
+			span.hamburger-box(name="hamburguer-menu")
+				span.hamburger-inner(name="hamburguer-menu")

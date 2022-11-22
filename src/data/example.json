@@ -3,35 +3,39 @@
 	"menu":[
 		{
 			"name"			:"DEPORTES",
-			"link"			:"https://www.kaposbet.com/Inicio/lineas"
+			"link"			:"deportes.html"
 		},
 		{
 			"name"			:"APUESTAS EN VIVO",
-			"link"			:"https://www.kaposbet.com/Inicio/lineas"
+			"link"			:"apuestas-en-vivo.html"
 		},
 		{
 			"name"			:"CASINO",
-			"link"			:"https://www.kaposbet.com/Inicio/lineas"
+			"link"			:"casino.html"
+		},
+		{
+			"name"			:"CASINO EN VIVO",
+			"link"			:"casino-en-vivo.html"
 		},
 		{
 			"name"			:"POKER",
-			"link"			:"https://www.kaposbet.com/Inicio/lineas"
+			"link"			:"poker.html"
 		},
 		{
 			"name"			:"ESPORTS",
-			"link"			:"https://www.kaposbet.com/Inicio/lineas"
+			"link"			:"#"
 		},
 		{
 			"name"			:"PROMOCIONES",
-			"link"			:"https://www.kaposbet.com/Inicio/lineas"
+			"link"			:"bonos.html"
 		},
 		{
 			"name"			:"BLOG",
-			"link"			:"https://www.kaposbet.com/Inicio/lineas"
+			"link"			:"blog.html"
 		},
 		{
 			"name"			:"BANCA",
-			"link"			:"https://www.kaposbet.com/Inicio/lineas"
+			"link"			:"banca.html"
 		}
 
 	],
@@ -49,7 +53,7 @@
 
 	"slides":[
 		{
-			"link"			: 	"assets/img/banners-bono-bienvenida.png",
+			"link"			: 	"assets/img/banners-bono-bienvenida.webp",
 			"name"			:	"banners-bienvenida"
 		},
 		{
@@ -57,45 +61,45 @@
 			"name"			:	"banners-casino"
 		},
 		{
-			"link"			: 	"assets/img/banners-combinadas-mobile.jpg",
+			"link"			: 	"assets/img/banners-combinadas-mobile.webp",
 			"name"			:	"banners-combinadas"
 		},
 		{
-			"link"			: 	"assets/img/banners-bono-cumpleanos.png",
+			"link"			: 	"assets/img/banners-bono-cumpleanos.webp",
 			"name"			:	"banners-cumple"
 		},
 		{
-			"link"			: 	"assets/img/banners-free-bet.png",
+			"link"			: 	"assets/img/banners-free-bet.webp",
 			"name"			:	"banners"
 		}
 	],
 	"slidesDesktop":[
 		{
-			"link"			: 	"assets/img/banners-bienvenida.jpg",
+			"link"			: 	"assets/img/banners-bienvenida.webp",
 			"name"			:	"banners-bienvenida",
 			"title"			:	"Bono de Reembolso",
 			"md"			:	"bono-de-reembolso"
 		},
 		{
-			"link"			: 	"assets/img/banners-casino2.png",
+			"link"			: 	"assets/img/banners-casino2.webp",
 			"name"			:	"banners-casino",
 			"title"			:	"Bono de Casino 100%",
 			"md"			:	"bono-de-casino"
 		},
 		{
-			"link"			: 	"assets/img/banners-casino.jpg",
+			"link"			: 	"assets/img/banners-casino1.webp",
 			"name"			:	"banners-casino",
 			"title"			:	"Bono de Casino 100%",
 			"md"			:	"bono-de-casino2"
 		},
 		{
-			"link"			: 	"assets/img/banners-combinadas.jpg",
+			"link"			: 	"assets/img/banners-combinadas.webp",
 			"name"			:	"banners-combinadas",
 			"title"			:	"Promoción en Apuestas Combinadas",
 			"md"			:	"promocion-en-apuestas"
 		},
 		{
-			"link"			: 	"assets/img/banners-cumple.jpg",
+			"link"			: 	"assets/img/banners-cumple.webp",
 			"name"			:	"banners-cumple",
 			"title"			:	"Bono De Cumpleaños",
 			"md"			:	"bono-de-cumpleaños"
@@ -107,7 +111,7 @@
 			"md"			:	"bono-de-bienvenida"
 		},
 		{
-			"link"			: 	"assets/img/bonner-de-caballos.png",
+			"link"			: 	"assets/img/bonner-de-caballos.webp",
 			"name"			:	"banner-de-caballos",
 			"title"			:	"Rebate Caballos",
 			"md"			:	"rebate"
@@ -126,87 +130,92 @@
 	"galeria":[
 		{
 			"video"			: "assets/img/configuraciones.mp4",
-			"img"			: "assets/img/screen-videos.png",
+			"img"			: "assets/img/screen-videos.webp",
 			"name"			: "¿Como configurar mis apuestas?"
 		},
 		{
 			"video"			: "assets/img/como-hacer-tus-apuestas.mp4",
-			"img"			: "assets/img/unselect2.png",
+			"img"			: "assets/img/unselect2.webp",
 			"name"			: "¿Como hacer tus apuestas deportivas?"
 		}
 	],
 
 	"dudas":[
 		{
-			"link"			: "assets/img/gift.png",
+			"link"			: "assets/img/gift.webp",
 			"name"			: "Promociones y Bonos",
 			"a"				: "bonos.html"
 		},
 		{
-			"link"			: "assets/img/wallet.png",
+			"link"			: "assets/img/wallet.webp",
 			"name"			: "Banca",
 			"a"				: "banca.html"
 		},
 		{
-			"link"			: "assets/img/blog.png",
+			"link"			: "assets/img/blog.webp",
 			"name"			: "Kapos Blog"
 		}
 	],
 	"deportes": [
 		{
-			"img"			:"assets/img/bola.png",
-			"name"			:"DEPORTES"
+			"img"			:"assets/img/bola.webp",
+			"name"			:"DEPORTES",
+			"link"			:"deportes.html"
 
 		},
 		{
-			"img"			:"assets/img/bola.png",
-			"name"			:"DEPORTES EN VIVO"
+			"img"			:"assets/img/bola.webp",
+			"name"			:"DEPORTES EN VIVO",
+			"link"			:"apuestas-en-vivo.html"
 		},
 		{
-			"img"			:"assets/img/dados.png",
-			"name"			:"CASINO"
+			"img"			:"assets/img/dados.webp",
+			"name"			:"CASINO",
+			"link"			:"casino.html"
 		},
 		{
-			"img"			:"assets/img/dados.png",
-			"name"			:"CASINO EN VIVO"
+			"img"			:"assets/img/dados.webp",
+			"name"			:"CASINO EN VIVO",
+			"link"			:"casino-en-vivo.html"
 		},
 		{
-			"img"			:"assets/img/esports.png",
-			"name"			:"ESPORTS"
+			"img"			:"assets/img/esports.webp",
+			"name"			:"ESPORTS",
+			"link"			:"#"
 		}
 	],
 	"footer": [
 		{
 			"name"			: "Acerca de nosotros",
-			"link"			: "#"
+			"link"			: "acerca-de-nosotros.html"
 		},
 		{
 			"name"			: "Términos y condiciones",
-			"link"			: "#"
+			"link"			: "terminos-y-condiciones.html"
 		},
 		{
 			"name"			: "Juego responsable",
-			"link"			: "#"
+			"link"			: "juego-responsable.html"
 		},
 		{
 			"name"			: "Politica de privacidad",
-			"link"			: "#"
+			"link"			: "politica-de-privacidad.html"
 		},
 		{
 			"name"			: "Programa de lealtad",
-			"link"			: "#"
+			"link"			: "programa-de-lealtad.html"
 		},
 		{
 			"name"			: "Reglas de la casa",
-			"link"			: "#"
+			"link"			: "reglas-de-la-casa.html"
 		},
 		{
 			"name"			: "Reglas de deportes",
-			"link"			: "#"
+			"link"			: "reglas-de-deportes.html"
 		},
 		{
 			"name"			: "Reglas de casino",
-			"link"			: "#"
+			"link"			: "reglas-de-casino.html"
 		}
 		
 	],
@@ -223,7 +232,7 @@
 	 ],
 	 "numeros":[
 		{
-			"pais"			:"assets/img/cr.png",
+			"pais"			:"assets/img/cr.webp",
 			"codigo"		:"+506"
 		}
 	 ],
@@ -251,67 +260,569 @@
 	 ],
 	 "prefooter":[
 			{
-				"img"			:"assets/img/bambif.png"
+				"img"			:"assets/img/bambif.webp"
 			},
 			{
-				"img"			:"assets/img/bbva.png"
+				"img"			:"assets/img/bbva.webp"
 			},
 			{
-				"img"			:"assets/img/bcp.png"
+				"img"			:"assets/img/bcp.webp"
 			},
 			{
-				"img"			:"assets/img/caja.png"
+				"img"			:"assets/img/caja.webp"
 			},
 			{
-				"img"			:"assets/img/cripto.png"
+				"img"			:"assets/img/cripto.webp"
 			},
 			{
-				"img"			:"assets/img/fullcarga.png"
+				"img"			:"assets/img/fullcarga.webp"
 			},
 			{
-				"img"			:"assets/img/houses.png"
+				"img"			:"assets/img/houses.webp"
 			},
 			{
-				"img"			:"assets/img/interbank.png"
+				"img"			:"assets/img/interbank.webp"
 			},
 			{
-				"img"			:"assets/img/kasnet.png"
+				"img"			:"assets/img/kasnet.webp"
 			},
 			{
-				"img"			:"assets/img/lukita.png"
+				"img"			:"assets/img/lukita.webp"
 			},
 			{
-				"img"			:"assets/img/moneygram.png"
+				"img"			:"assets/img/moneygram.webp"
 			},
 			{
 				"img"			:"assets/img/pago-efectivo.jpg"
 			},
 			{
-				"img"			:"assets/img/pago-seguro.png"
+				"img"			:"assets/img/pago-seguro.webp"
 			},
 			{
-				"img"			:"assets/img/plin.png"
+				"img"			:"assets/img/plin.webp"
 			},
 			{
-				"img"			:"assets/img/ria.png"
+				"img"			:"assets/img/ria.webp"
 			},
 			{
-				"img"			:"assets/img/scotiabank.png"
+				"img"			:"assets/img/scotiabank.webp"
 			},
 			{
-				"img"			:"assets/img/tambo.png"
+				"img"			:"assets/img/tambo.webp"
 			},
 			{
-				"img"			:"assets/img/tunki.png"
+				"img"			:"assets/img/tunki.webp"
 			},
 			{
-				"img"			:"assets/img/visa-mastercard.png"
+				"img"			:"assets/img/visa-mastercard.webp"
 			},
 			{
-				"img"			:"assets/img/westerunion.png"
+				"img"			:"assets/img/westerunion.webp"
 			},
 			{
-				"img"			:"assets/img/yape.png"
+				"img"			:"assets/img/yape.webp"
 			}
-	 ]	
+	 ],
+	 "banca":[
+		{
+			"retiros":[
+				{
+					"name":"Pago efectivo",
+					"img":"assets/img/pago-efectivo.jpg"
+				},
+				{
+					"name":"Transferencia Bancaria",
+					"img":"assets/img/houses.webp",
+					"list":["1. Cuenta CCI: 003-200-003002536666-34 moneda: SOLES. Banco: INTERBANK","2. Cuenta CCI: 003-200-003002536673-30 moneda: $USD. Banco: INTERBANK","3. Transferencia minima de S/.15 o $5usd y maximo de S/.300.0000 o $100.000usd","4. Cualquier problema comunicarse a info@kaposbet.com o al chat en linea."]
+				},
+				{
+					"name":"Cripto moneda",
+					"img":"assets/img/cripto.webp",
+					"list":["Retiro Mínimo $50 usd Retiro Máximo Diario $2500 usd Retiro Máximo Semanal $5000 usd Contáctanos en el departamento de “banca en línea” en el chat para más información"]
+				},
+				{
+					"name":"Envio de dinero",
+					"img":"assets/img/RiaMoneygram.webp",
+					"list":["Retiro Mínimo de $100 usd Retiro Máximo de $400 usd Comisión variable dependiendo del monto. Contáctanos en el departamento de “banca en línea” en el chat antes de las 11am hora del este para procesar tu envío el mismo día."]
+				}
+			]
+		},
+		{
+			"depositos":[
+				{
+					"name":"Pago efectivo",
+					"img":"assets/img/pago-efectivo.jpg",
+					"list":["1. Busca en el cajero en línea la opción de Pago Seguro.","2. Elige el lugar donde quieres Depositar.", "3. Imprime, tómale una foto o Envíate por Email el Código de Pago y muéstralo a la hora de depositar Transferencia minima de S/.15 o $5usd y Transferencia máxima de S/.300.0000 o $100.000usd. Para más informacion escribir a: info@kaposbet.com o al chat en linea."]
+				},
+				{
+					"name":"Pago seguro",
+					"img":"assets/img/pago-seguro.webp",
+					"list":["1. Busca en el cajero en línea la opción de Pago Seguro.","2. Elige el lugar donde quieres Depositar.", "3. Imprime, tómale una foto o Envíate por Email el Código de Pago y muéstralo a la hora de depositar. Para más informacion escribir a: info@kaposbet.com"]
+				},
+				{
+					"name":"Yape",
+					"img":"assets/img/yape.webp",
+					"list":["Yape es un app con el que puedes hacer transferencias entre cuentas BCP (Banco de Crédito del Perú) con tan solo el número de celular de tus contactos o escaneando su código QR.Recarga mínima S/.1 enviar la constancia de transferencia al número de Whatsapp con el usuario de KAPOSBET, la constancia debe estar a nombre del usuario Monto máximo de transferencia S/.500 Deposito minimo S/. 1 Deposito maximo S/.500 Teléfono Yapero 994755918 (Cuenta a cargo del Asesor Comercial Wagner Soto) QR:"],
+					"qr":"assets/img/qr-yape.webp"
+				},
+				{
+					"name":"Tunki",
+					"img":"assets/img/tunki.webp",
+					"list":["Tunki es un app con el que puedes hacer transferencias entre cuentas INTERBANK con tan solo el número de celular de tus contactos o escaneando su código QR. Recarga mínima S/.1 enviar la constancia de transferencia al número de Whatsapp con el usuario de KAPOSBET, la constancia debe estar a nombre del usuario. Monto máximo de transferencia S/.500 Deposito minimo S/. 1 Deposito maximo S/.500 Teléfono Tunkero 994755918 (Cuenta a cargo del Asesor Comercial Wagner Soto) QR:"],
+					"qr":"assets/img/qr-tunki.webp"
+				},
+				{
+					"name":"Lukita",
+					"img":"assets/img/lukita.webp",
+					"list":["Las transferencias entre cuentas de BBVA Continental ahora serán más simples, rápidas y seguras.'Lukita', la nueva funcionalidad de banca móvil de la entidad financiera, permite que los clientes puedan enviar o recibir dinero de sus contactos del celular sin necesidad de conocer los números de cuenta. Monto máximo de transferencia S/.500 Deposito minimo S/. 1 Deposito maximo S/.500 Teléfono Lukitero 994755918 (Cuenta a cargo del Asesor Comercial Wagner Soto). Recarga mínima S/.1 enviar la constancia de transferencia al número de Whatsapp con el usuario de KAPOSBET, la constancia debe estar a nombre del usuario."]
+				},
+				{
+					"name":"Plin",
+					"img":"assets/img/plin.webp",
+					"list":["Plin es la opción que me permite hacer transferencias inmediatas solo con el número de celular a mis contactos de Scotiabank, BBVA e Interbank desde la app de estos bancos. Teléfono Plinero 994755918 (Cuenta a cargo del Asesor Comercial Wagner Soto). Recarga mínima S/.1 enviar la constancia de transferencia al número de Whatsapp con el usuario de KAPOSBET, la constancia debe estar a nombre del usuario. Monto máximo de transferencia S/.500 Deposito minimo S/. 1 Deposito maximo S/.500"]
+				},
+				{
+					"name":"Transferencia Bancaria",
+					"img":"assets/img/houses.webp",
+					"list":["1. Cuenta CCI: 003-200-003002536666-34 moneda: SOLES. Banco: INTERBANK", "2. Cuenta CCI: 003-200-003002536673-30 moneda: $USD. Banco: INTERBANK","3. Transferencia minima de S/.15 o $5usd y maximo de S/.300.0000 o $100.000usd.","4. Cualquier problema comunicarse a info@kaposbet.com o al chat en linea."]
+				},
+				{
+					"name":"Cripto moneda",
+					"img":"assets/img/cripto.webp",
+					"list":["Deposito Mínimo de $50 usd (Montos inferiores a $50 usd tienen un recargo de $2 usd) Contáctanos en el departamento de banca en línea en el chat para más información."]
+				},
+				{
+					"name":"Envio de dinero",
+					"img":"assets/img/RiaMoneygram.webp",
+					"list":["Deposito Mínimo de $50 usd (Montos inferiores a $50 usd tienen un recargo de $2 usd) Contáctanos en el departamento de banca en línea en el chat para más información."]
+				}
+			]
+		}
+	 ],
+	 "casino":[
+		{
+			"name": "Table",
+			"games": [
+				{
+					"name": "BetSoft",
+					"games":[
+						{
+							"img": "assets/img/ZoomRoulette.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/poker3.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/EuropeanRoulette.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/CommonDrawRoulette.webp",
+							"link":"#"
+						}
+					]
+				},
+				{
+					"name": "Casino Nucleus",
+					"games":[
+						{
+							"img": "assets/img/Zoom-RouletteN.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/Craps.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/European-BlackJack.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/Pirate-21.webp",
+							"link":"#"
+						}
+					]	
+				}
+			]
+		},
+		{
+			"name": "Slots",
+			"games": [
+				{
+					"name": "BetSoft",
+					"games":[
+						{
+							"img": "assets/img/SuperSweets.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/fruitBatCrazy.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/chilliPop.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/TotalOverdrive.webp",
+							"link":"#"
+						}
+					]
+				},
+				{
+					"name": "Casino Nucleus",
+					"games":[
+						{
+							"img": "assets/img/jingle.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/SpinToRide.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/SeerCrystal.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/TotemTumble.webp",
+							"link":"#"
+						}
+					]	
+				}
+			]
+		},
+		{
+			"name": "Video Poker",
+			"games": [
+				{
+					"name": "BetSoft",
+					"games":[
+						{
+							"img": "assets/img/DeucesWildVideoPoker.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/JokerPoker.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/DeucesWild.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/SplitWayRoyalVideoPoker.webp",
+							"link":"#"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Multihand Poker",
+			"games": [
+				{
+					"name": "BetSoft",
+					"games":[
+						{
+							"img": "assets/img/Multihand-All-American-Video-Poker.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/Multihand-Bonus-Deluxe.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/MultihandBonusPoker.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/Multihand-Deuces-Wild.webp",
+							"link":"#"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Pyramid Poker",
+			"games": [
+				{
+					"name": "BetSoft",
+					"games":[
+						{
+							"img": "assets/img/PyramidAcesandFaces.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/PyramidBonusDeluxePoker.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/PyramidBonusPoker.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/PyramidDeucesWildPoker.webp",
+							"link":"#"
+							
+						}
+					]
+				}
+			]
+		}
+	 ],
+	 "poker":[
+		{
+			"name": "BetSoft",
+			"games": [
+				{
+					"name": "Video Poker",
+					"games":[
+						{
+							"img": "assets/img/DeucesAndJokers.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/BonusPoker.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/FiveDrawPoker.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/DoubleBonusPoker.webp",
+							"link":"#"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Casino Nucleus",
+			"games": [
+				{
+					"name": "Video Poker",
+					"games":[
+						{
+							"img": "assets/img/Double-Bonus.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/Joker-Poker.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/Bonus-Poker.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/All-American-Video-Poker.webp",
+							"link":"#"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Tom Horn",
+			"games": [
+				{
+					"name": "Video Poker",
+					"games":[
+						{
+							"img": "assets/img/logo300.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/logo301.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/logo302.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/logo303.webp",
+							"link":"#"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Wazdan",
+			"games": [
+				{
+					"name": "Video Poker",
+					"games":[
+						{
+							"img": "assets/img/MagicPoker.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/CaribbeanBeachPoke.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/AmericanPokerV.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/AmericanPokerGold.webp",
+							"link":"#"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Casino Platinum",
+			"games": [
+				{
+					"name": "Video Poker",
+					"games":[
+						{
+							"img": "assets/img/joker-poker2.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/betters.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/jack-better.webp",
+							"link":"#"
+						},
+						{
+							"img": "assets/img/royal.webp",
+							"link":"#"
+						}
+					]
+				}
+			]
+		}
+	 ],
+	 "casinoEnVivo":[
+		{
+			"name":"Baccarat",
+			"imgs":[
+				{
+					"img":"assets/img/Baccarat01.webp"
+				},
+				{
+					"img":"assets/img/Baccarat02.webp"
+				},
+				{
+					"img":"assets/img/Baccarat03.webp"
+				},
+				{
+					"img":"assets/img/Baccarat04.webp"
+				},
+				{
+					"img":"assets/img/Baccarat05.webp"
+				},
+				{
+					"img":"assets/img/Baccarat06.webp"
+				},
+				{
+					"img":"assets/img/Baccarat07.webp"
+				},
+				{
+					"img":"assets/img/Baccarat08.webp"
+				},
+				{
+					"img":"assets/img/Baccarat09.webp"
+				},
+				{
+					"img":"assets/img/Baccarat10.webp"
+				}
+			]
+		},
+		{
+			"name":"Roulette",
+			"imgs":[
+				{
+					"img":"assets/img/Roulette01.webp"
+				},
+				{
+					"img":"assets/img/Roulette02.webp"
+				},
+				{
+					"img":"assets/img/Roulette03.webp"
+				},
+				{
+					"img":"assets/img/Roulette04.webp"
+				}
+			]
+		},
+		{
+			"name":"Blackjack",
+			"imgs":[
+				{
+					"img":"assets/img/Blackjack01.webp"
+				},
+				{
+					"img":"assets/img/Blackjack02.webp"
+				}
+			]
+		},
+		{
+			"name":"Casino Holdem",
+			"imgs":[
+				{
+					"img":"assets/img/casino-Holdem01.webp"
+				}
+			]
+		}
+	 ],
+	 "blog":[
+		{
+			"img":"assets/img/basket.webp",
+			"link":"#",
+			"title": "NBA 2K20: How To Download Ultra-Realistic Custom Draft Class",
+			"content": "When NBA 2K21 releases in September, the draft will still be a month or so away, and we can only hope for a roster update that puts rookies and free agents on their teams."
+		},
+		{	
+			"img":"assets/img/ronaldo.webp",
+			"link":"#",
+			"title": "Cristiano Ronaldo is first footballer to earn more than $1 billion",
+			"content": "Portuguese superstar Cristiano Ronaldo has become the first footballer to earn more than $1 billion (€885m), according to Forbes magazine."
+		}
+	 ],
+	 "blogVideos":[
+			{
+				"title": "NBA 2K20 - Next is Now | PS4",
+				"link":"https://www.youtube.com/embed/iFPWdc3PMBk?controls=0&rel=0&disablekb=1&showinfo=0&modestbranding=0&html5=1&iv_load_policy=3&autoplay=0&end=0&loop=0&playsinline=0&start=0&nocookie=false&enablejsapi=1&origin=https%3A%2F%2Fblog.kaposbet.com&widgetid=1"
+			}
+	 ],
+	 "acercaDeNosotros":[
+			{
+				"img-mobile": "assets/img/acerca-mobile.webp",
+				"img-desktop": "assets/img/acerca-desktop.webp",
+				"titulo": "Contamos con un grupo de profesionales que constantemente trabajan en ofrecerle a cada uno de nuestros clientes una experiencia excepcional y garantizamos hacerle vivir el deporte de una manera diferente.",
+				"parrafo": "Dentro de nuestra página encontrarás para pronosticar:",
+				"lista": [
+					{
+						"item": "Todas las Ligas y eventos deportivos mundiales."
+					},
+					{
+						"item": "Las mejores cuotas o líneas del mercado."
+					},
+					{
+						"item": "Pronósticos Deportivos en Vivo."
+					},
+					{
+						"item": "ESPORTS"
+					},
+					{
+						"item": "Carreras de Caballos"
+					}
+				],
+				"footer":"Disponemos de una gran variedad de métodos de depósitos y retiros para realizar sus transacciones de una manera rápida y ágil."
+			}
+	 ]
 }

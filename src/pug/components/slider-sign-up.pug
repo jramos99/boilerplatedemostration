@@ -2,10 +2,12 @@ div(class="container")
 		div(class='ed-grid s-grid-4 rows-gap')
 			div(class='s-cols-4 l-cols-3')
 				div(class='container__slider tns-mobile')
+					button#customize-toggle1
 					div(class='tns-single ' id='tnsSingleMobile')
 						-for(var i = 0; i < slides.length ; i++)
 							div: div(class='tns-single__content'): img(src=`${slides[i].link}`, alt=`${slides[i].name}`)
 				div(class='container__slider tns-desktop')
+					button#customize-toggle2
 					div(class='tns-single' id='tnsSingleDesktop')
 						-for(var i = 0; i < slidesDesktop.length ; i++)
 							div: div(class='tns-single__content'): img(src=`${slidesDesktop[i].link}`, alt=`${slidesDesktop[i].name}`)
@@ -21,5 +23,5 @@ div(class="container")
 							input(type="text" name='pasword') 
 						div.form__item
 							button.form__item--sign-up INGRESAR
-							button.form__item--login: a(href="./sign-up.html")  REGISTRATE
+							button.form__item--login: a(href="./register.html")  REGISTRATE
 						div.form__item: a(href="#") ¿Olvido su contraseña? 

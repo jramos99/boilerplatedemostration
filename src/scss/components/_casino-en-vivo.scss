@@ -1,0 +1,17 @@
+.casino-container{
+	color: white;
+	&-content{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		@include from(m){
+			justify-content: initial;
+		}
+		margin-bottom: 20px;
+	}
+	.casino-container-img{
+		margin: 10px;
+		max-width: 210px;
+		height: auto;
+	}
+}

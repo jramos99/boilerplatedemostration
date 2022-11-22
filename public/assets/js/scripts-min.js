@@ -92,6 +92,30 @@ var mdInner = exports.mdInner = function mdInner(rutaMd, nameObjJson, classDiv) 
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.modal = modal;
+function modal() {
+	var d = document,
+	    open = d.querySelectorAll('.btn-modal'),
+	    close = d.getElementById('close'),
+	    modal = d.getElementById('modal-container');
+
+	for (var i = 0; i < open.length; i++) {
+		open[i].addEventListener('click', function () {
+			modal.classList.add('active');
+		});
+	}
+
+	close.addEventListener('click', function () {
+		modal.classList.remove('active');
+	});
+}
+
+},{}],5:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
     value: true
 });
 var tabs = function tabs() {
@@ -116,53 +140,82 @@ var tabs = function tabs() {
 
 exports.tabs = tabs;
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+				value: true
 });
 var tnsSingleMobile = function tnsSingleMobile() {
-	var slider = tns({
-		container: '#tnsSingleMobile',
-		items: 1,
-		slideBy: 1,
-		speed: 1000,
-		mode: 'gallery',
-		mouseDrag: true,
-		controlsText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
-	});
+				var slider = tns({
+								container: '#tnsSingleMobile',
+								items: 1,
+								slideBy: 1,
+								speed: 1000,
+								mode: 'gallery',
+								autoplay: true,
+								autoplayButton: "#customize-toggle1",
+								mouseDrag: true,
+								controlsText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
+				});
 };
 
 var tnsSingleDesktop = function tnsSingleDesktop() {
-	var slider = tns({
-		container: '#tnsSingleDesktop',
-		items: 1,
-		slideBy: 1,
-		speed: 1000,
-		mode: 'gallery',
-		mouseDrag: true,
-		controlsText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
-	});
+				var slider = tns({
+								container: '#tnsSingleDesktop',
+								items: 1,
+								slideBy: 1,
+								speed: 1000,
+								mode: 'gallery',
+								autoplay: true,
+								autoplayButton: "#customize-toggle2",
+								mouseDrag: true,
+								controlsText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
+				});
 };
 
 var tnsSinglePrefooter = function tnsSinglePrefooter() {
-	var slider = tns({
-		container: '#tnsSinglePrefooter',
-		items: 2,
-		slideBy: 1,
-		speed: 1000,
-		mode: 'gallery',
-		mouseDrag: true,
-		controlsText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
-	});
+				var slider = tns({
+								container: '#tnsSinglePrefooter',
+								slideBy: 2,
+								speed: 300,
+								autoplay: true,
+								autoplayButton: "#customize-toggle3",
+								mode: 'gallery',
+								mouseDrag: true,
+								controls: false,
+								nav: false,
+								responsive: {
+												320: {
+																items: 2
+												},
+												480: {
+																items: 4
+												},
+												640: {
+																items: 4
+												},
+												800: {
+																items: 4
+												},
+												960: {
+																items: 4
+												},
+												1120: {
+																items: 4
+												},
+												1280: {
+																items: 4
+												}
+								}
+				});
 };
 
 exports.tnsSingleMobile = tnsSingleMobile;
 exports.tnsSingleDesktop = tnsSingleDesktop;
 exports.tnsSinglePrefooter = tnsSinglePrefooter;
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -202,7 +255,7 @@ var modalLanguage = exports.modalLanguage = function modalLanguage() {
 	}
 };
 
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 'use strict';
 
 var _tnsSlider = require('./components/tns-slider');
@@ -217,30 +270,36 @@ var _mdCompiler = require('./components/md-compiler');
 
 var _tabs = require('./components/tabs');
 
+var _modalSignUp = require('./components/modal-sign-up');
+
 (function () {
 	(0, _topNav.topNav)();
 	(0, _topNav.modalLanguage)();
+	(0, _tnsSlider.tnsSinglePrefooter)();
 	if (document.body.classList.contains('home')) {
 		// functions here
 		(0, _tnsSlider.tnsSingleDesktop)();
 		(0, _tnsSlider.tnsSingleMobile)();
-		(0, _tnsSlider.tnsSinglePrefooter)();
 		(0, _galery.galery)();
 	} else if (document.body.classList.contains('bonos')) {
 		// functions here
 		(0, _mdCompiler.mdInner)('./md', 'slidesDesktop', 'accordion-container__panel');
 		(0, _acordeon.accordion)();
-		(0, _tnsSlider.tnsSinglePrefooter)();
 	} else if (document.body.classList.contains('banca')) {
 		// functions here
-		(0, _tnsSlider.tnsSinglePrefooter)();
+		(0, _modalSignUp.modal)();
 		(0, _tabs.tabs)();
-		(0, _acordeon.accordion)();
-	} else if (document.body.classList.contains('page4')) {
+	} else if (document.body.classList.contains('casino')) {
 		// functions here
+		(0, _tabs.tabs)();
+		(0, _modalSignUp.modal)();
+	} else if (document.body.classList.contains('poker')) {
+		// functions here
+		(0, _tabs.tabs)();
+		(0, _modalSignUp.modal)();
 	}
 })();
 
-},{"./components/acordeon":1,"./components/galery":2,"./components/md-compiler":3,"./components/tabs":4,"./components/tns-slider":5,"./components/topNav":6}]},{},[7]);
+},{"./components/acordeon":1,"./components/galery":2,"./components/md-compiler":3,"./components/modal-sign-up":4,"./components/tabs":5,"./components/tns-slider":6,"./components/topNav":7}]},{},[8]);
 
 //# sourceMappingURL=scripts-min.js.map

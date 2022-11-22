@@ -19,6 +19,11 @@
 		max-height: 30px;
 		background-color: rgba($color: #222, $alpha: 0);
 		cursor: pointer;
+		margin-top: 10px;
+		@include from(l){
+			margin-top: 0;
+			margin-left: 10px;
+		}
 		option{
 			background-color: var(--main-color);
 			color: #222;
@@ -82,9 +87,12 @@
 		display: inline-block;
 	}
 	&__anchor{
-		
+		text-decoration: none;
 		@include fromTo(s,lg){
 			display: block;
+		}
+		&:hover{
+			text-decoration: none;
 		}
 
 	}
@@ -125,6 +133,7 @@
 	position: absolute;
 	z-index: 100;
 	transition: opacity .5s;
+	
 	@include from(l){
 		right: 12px;
 	}
@@ -139,6 +148,7 @@
 	background-color: #222;
 	color: white;
 	padding: 10px;
+	
 	img{
 		margin-left: 10px;
 		max-width: 30px;

@@ -1,0 +1,22 @@
+div(class="container")
+	div(class="casino-container")
+		div
+			h2 Baccarat
+			div(class='casino-container-content')
+				-for(let i = 0; i < casinoEnVivo[0].imgs.length; i++)
+					div(class='casino-container-img'): img(src=casinoEnVivo[0].imgs[i].img, alt="Baccarat")
+		div
+			h2 Roulette
+			div(class='casino-container-content')
+				-for(let i = 0; i < casinoEnVivo[1].imgs.length; i++)
+					div(class='casino-container-img'): img(src=casinoEnVivo[1].imgs[i].img, alt="Roulette")
+		div
+			h2 Blackjack
+			div(class='casino-container-content')
+				-for(let i = 0; i < casinoEnVivo[2].imgs.length; i++)
+					div(class='casino-container-img'): img(src=casinoEnVivo[2].imgs[i].img, alt="Blackjack")
+		div
+			h2 Casino Holdem
+			div(class='casino-container-content')
+				-for(let i = 0; i < casinoEnVivo[3].imgs.length; i++)
+					div(class='casino-container-img'): img(src=casinoEnVivo[3].imgs[i].img, alt="Casino Holdem")

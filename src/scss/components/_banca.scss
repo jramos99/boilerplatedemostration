@@ -1,7 +1,7 @@
 .tabs-container {
 	width: 100%;
 	position: relative;
-	margin: 5em auto;
+	margin-top: 5rem;
   
 	&__tabs {
 	list-style: none;
@@ -11,7 +11,7 @@
 	}
   
 	&__tab {
-	  background: #eee;
+	  background:var(--main-color);
 	  color: #666;
 	  line-height: 2;
 	  padding: 0 1em;
@@ -23,7 +23,7 @@
 	  top: 1px;
 	  cursor: pointer;
 	  &.is-active {
-		background: #fff;
+		background: var(--secondary-color);
 		color: #111;
 		position: relative;
 		z-index: 2;
@@ -34,16 +34,77 @@
 	  position: relative;
 	  z-index: 1;
 	  border: 1px solid #ccc;
-	  color: white;
+	  border-radius: 0px 20px 20px 20px;
+	  color: #111;
+	  background-color: var(--main-color);
 	  padding: 1em;
 	  }
   
 	&__panel {
 	  position: absolute;
 	  left: -1000%;
+	  display: none;
 	  &.is-active {
 		position: relative;
 		left: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	  }
+	}
+  }
+
+  .deposit-container{
+	background-color: #222;
+	border: 1px solid white;
+	border-radius: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: white;
+	width: 100%;
+	@include from(m){
+		width: 48%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+
+	h2{
+		text-align: center;
+	}
+	&-logo{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-bottom: 1px solid white;
+		img{
+			width: 50%;
+			height: 50%;
+		}
+	}
+	&-content{
+		padding: 1rem;
+	}
+	&-qr{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+		img{
+			width: 50%;
+		}
+	}
+	&-button{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+		button{
+			background-color: #333;
+			color: white;
+			padding: 10px 15px;
+			&:hover{
+				background-color: var(--main-color);
+				color: #333;
+			}
+		}
 	}
   }

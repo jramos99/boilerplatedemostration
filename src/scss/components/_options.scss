@@ -64,6 +64,7 @@
 	&:hover{
 		background-color: rgba($color: rgb(251, 251, 251), $alpha: 0.3);
 		text-decoration: none;
+		color: white;
 	}
 	p{
 		margin-top: 25px;
@@ -79,4 +80,5 @@
 		max-width: 45px;
 		max-height: 50px;
 	}
+	
 }

@@ -1,0 +1,38 @@
+div(class="container")
+	div(class='ed-item')
+		div(class='tabs-container')
+			ul(class='tabs-container__tabs games-tabs' id='tabs')
+				li(class='tabs-container__tab is-active') Betsoft
+				li(class='tabs-container__tab') Casino Nucleus
+				li(class='tabs-container__tab') Tom Horn
+				li(class='tabs-container__tab') Wazdan
+				li(class='tabs-container__tab') Casino Platinum
+			div(class='tabs-container__panels')
+				div(class='tabs-container__panel is-active')
+					div(class="games-container")
+						-for(let j = 0; j < poker[0].games.length; j++)
+							h2= poker[0].games[j].name
+							div(class="games-container-galery")
+								-for(let k = 0; k < poker[0].games[j].games.length; k++)
+									div(class="games-container-galery-item")
+										img(src=poker[0].games[j].games[k].img, alt="game")
+										div(class="games-container-galery-item-buttons")
+											button(class="btn-modal btn sign-up") play for real
+						div(class="sign-up-container")
+								a(href="register.html" class="btn sign-up sign-up_main") Registrarse
+											
+				-for(let i = 1; i < poker.length; i++)
+					div(class='tabs-container__panel')
+						div(class="games-container")
+							-for(let j = 0; j < poker[i].games.length; j++)
+								h2= poker[i].games[j].name
+								div(class="games-container-galery")
+									-for(let k = 0; k < poker[i].games[j].games.length; k++)
+										div(class="games-container-galery-item")
+											img(src=poker[i].games[j].games[k].img, alt="game")
+											div(class="games-container-galery-item-buttons")
+												button(class="btn-modal btn sign-up") play for real
+							div(class="sign-up-container")
+								a(href="register.html" class="btn sign-up sign-up_main") Registrarse
+												
+

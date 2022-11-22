@@ -5,6 +5,8 @@ const tnsSingleMobile = ()=> {
 		slideBy             : 1,
 		speed               : 1000,
 		mode                : 'gallery',
+		autoplay			: true,
+		autoplayButton      : "#customize-toggle1",
 		mouseDrag           : true,
 		controlsText: [ 
 			'<i class="fas fa-chevron-left"></i>',
@@ -20,6 +22,8 @@ const tnsSingleDesktop = ()=> {
 		slideBy             : 1,
 		speed               : 1000,
 		mode                : 'gallery',
+		autoplay			: true,
+		autoplayButton      : "#customize-toggle2",
 		mouseDrag           : true,
 		controlsText: [ 
 			'<i class="fas fa-chevron-left"></i>',
@@ -31,15 +35,37 @@ const tnsSingleDesktop = ()=> {
 const tnsSinglePrefooter = ()=> {
 	const slider = tns({ 
 		container           : '#tnsSinglePrefooter',
-		items               : 2, 
-		slideBy             : 1,
-		speed               : 1000,
+		slideBy             : 2,
+		speed               : 300,
+		autoplay			: true,
+		autoplayButton      : "#customize-toggle3",
 		mode                : 'gallery',
 		mouseDrag           : true,
-		controlsText: [ 
-			'<i class="fas fa-chevron-left"></i>',
-			'<i class="fas fa-chevron-right"></i>'
-			]
+		controls			: false,
+		nav					:false,
+		responsive: {
+            320: {
+                items: 2,
+            },
+            480: {
+                items: 4,
+            },
+            640: {
+                items: 4,
+            },
+            800: {
+                items: 4,
+            },
+            960: {
+                items: 4,
+            },
+            1120: {
+                items: 4,
+            },
+            1280: {
+                items: 4,
+            },
+        }
 		}); 
 };
 

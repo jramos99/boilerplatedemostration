@@ -1,0 +1,38 @@
+div(class="container")
+	div(class='ed-item')
+		div(class='tabs-container')
+			ul(class='tabs-container__tabs games-tabs' id='tabs')
+				li(class='tabs-container__tab is-active') Table
+				li(class='tabs-container__tab') Slots
+				li(class='tabs-container__tab') Video Poker
+				li(class='tabs-container__tab') Multihand Poker
+				li(class='tabs-container__tab') Pyramid Poker
+			div(class='tabs-container__panels')
+				div(class='tabs-container__panel is-active')
+					div(class="games-container")
+						-for(let j = 0; j < casino[0].games.length; j++)
+							h2= casino[0].games[j].name
+							div(class="games-container-galery")
+								-for(let k = 0; k < casino[0].games[j].games.length; k++)
+									div(class="games-container-galery-item")
+										img(src=casino[0].games[j].games[k].img, alt="game")
+										div(class="games-container-galery-item-buttons")
+											button(class="btn-modal btn sign-up") play for real
+											button(class="btn play-for-fun") play for fun
+						div(class="sign-up-container")
+							a(href="register.html" class="btn sign-up sign-up_main")  Registrarse
+				-for(let i = 1; i < casino.length; i++)
+					div(class='tabs-container__panel')
+						div(class="games-container")
+							-for(let j = 0; j < casino[i].games.length; j++)
+								h2= casino[i].games[j].name
+								div(class="games-container-galery")
+									-for(let k = 0; k < casino[i].games[j].games.length; k++)
+										div(class="games-container-galery-item")
+											img(src=casino[i].games[j].games[k].img, alt="game")
+											div(class="games-container-galery-item-buttons")
+												button(class="btn-modal btn sign-up") play for real
+												button(class="btn play-for-fun") play for fun
+							div(class="sign-up-container")
+								a(href="register.html" class="btn sign-up sign-up_main") Registrarse
+

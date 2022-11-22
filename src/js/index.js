@@ -4,27 +4,32 @@ import {galery} from './components/galery';
 import {accordion} from './components/acordeon';
 import {mdInner} from './components/md-compiler';
 import {tabs} from './components/tabs';
+import {modal} from './components/modal-sign-up';
 
 (()=>{
 	topNav();
 	modalLanguage();
+	tnsSinglePrefooter();
 	if (document.body.classList.contains('home')) {
 		// functions here
 		tnsSingleDesktop();
 		tnsSingleMobile();	
-		tnsSinglePrefooter();
 		galery();
 	}else if (document.body.classList.contains('bonos')) {
 		// functions here
 		mdInner('./md', 'slidesDesktop','accordion-container__panel');
 		accordion();
-		tnsSinglePrefooter();
 	}else if (document.body.classList.contains('banca')) {
 		// functions here
-		tnsSinglePrefooter();
+		modal();
 		tabs();
-		accordion();
-	}else if (document.body.classList.contains('page4')) {
+	}else if (document.body.classList.contains('casino')) {
 		// functions here
+		tabs();
+		modal();
+	}else if (document.body.classList.contains('poker')) {
+		// functions here
+		tabs();
+		modal();
 	}
 })();

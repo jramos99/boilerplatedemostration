@@ -5,4 +5,24 @@ div(class='footer-container ')
 	div(class="author")
 		div(class="jazz-div")
 			span powered by JazzGS 
-			img(src="assets/img/powered-jgs.png", alt="Jazz")
+			img(src="assets/img/powered-jgs.webp", alt="Jazz")
+
+div(class="modal-container" id="modal-container")
+	div(class="modal-container-body")
+		div(class="modal-container-close")
+			p Ingreso de Usuario
+			button(id="close") X
+		div(class="modal-container-content")
+			form
+				div(class="form-item")
+					label(for="user") Usuario
+					br
+					input(type="text" name="user") 
+				div(class="form-item")
+					label(for="password") Contraseña
+					br
+					input(type="text" name="password")
+				div(class="form-item")
+					a(href="register.html" class="btn sign-up")  Registrarse
+					button(class="btn login") Ingresar
+

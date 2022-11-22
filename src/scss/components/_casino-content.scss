@@ -1,0 +1,69 @@
+.games-tabs{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.games-container{
+	width: 100%;
+	&-galery{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		
+
+		&-item{
+			max-width: 280px;
+			background-color: #333;
+			border: 1px solid black;
+			margin: 10px 0;
+			border-radius: 20px;
+			border: 1px solid white;
+			img{
+				border-radius: 20px 20px 0 0;
+			}
+			&-buttons{
+				padding: 10px;
+				display: flex;
+				justify-content: space-around;
+			}
+		}
+	}
+}
+.tabs-container__panels{
+	background-color: #333;
+	color: white;
+}
+        
+.btn{
+	padding: 5px 10px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.sign-up-container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.sign-up{
+	background-color: var(--main-color);
+	color: #333;
+	border: 1px solid white;
+	&:hover{
+		background-color: #333;
+		color: var(--main-color);
+		border: 1px solid var(--main-color);
+		text-decoration: none;
+	}
+}
+.play-for-fun{
+	background-color: var(--secondary-color);
+	color: #333;
+	border: 1px solid var(--secondary-color);
+	&:hover{
+		background-color: white;
+		color: #333;
+		border: 1px solid var(--secondary-color);
+	}
+}
